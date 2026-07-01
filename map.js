@@ -1,4 +1,4 @@
-/* VexSort — interactive world map */
+/* VEXAutoSort - interactive world map */
 (function(){
   const svg=document.getElementById('worldSvg');if(!svg)return;
   const NS='http://www.w3.org/2000/svg';

@@ -1,4 +1,4 @@
-/* VexSort — shared interactions (multi-page) */
+/* VEXAutoSort - shared interactions (multi-page) */
 (function(){
   const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -34,7 +34,7 @@
   /* Boot animation (home only) */
   const bootWord=document.getElementById('bootWord'), bootStage=document.getElementById('bootStage');
   if(bootWord&&bootStage){
-    'VexSort'.split('').forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch;if(i>=3)s.classList.add('r');s.style.animationDelay=(0.08*i+0.5)+'s';bootWord.appendChild(s);});
+    'VEXAutoSort'.split('').forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch;if(i>=3)s.classList.add('r');s.style.animationDelay=(0.08*i+0.5)+'s';bootWord.appendChild(s);});
     if(!REDUCE){for(let i=0;i<14;i++){const p=document.createElement('span');p.className='part';const sz=5+Math.random()*10;p.style.width=sz+'px';p.style.height=sz+'px';p.style.left=(40+Math.random()*260)+'px';p.style.top=(40+Math.random()*40)+'px';p.style.setProperty('--sx',(Math.random()*500-250)+'px');p.style.setProperty('--sy',(Math.random()*400-200)+'px');p.style.setProperty('--sr',(Math.random()*360)+'deg');p.style.animationDelay=(Math.random()*0.3)+'s';if(Math.random()>0.5)p.style.borderRadius='50%';bootStage.appendChild(p);}}
     setTimeout(()=>{const b=document.getElementById('boot');if(b)b.classList.add('done');animateStats();},REDUCE?200:2500);
   } else if(document.querySelector('.hero-stats')){
@@ -50,13 +50,6 @@
     window.addEventListener('scroll',spy,{passive:true});
     window.addEventListener('resize',spy); spy();
   }
-
-  /* Scroll-driven hero fade */
-  (function(){
-    const visual=document.querySelector('.hero-visual'); if(!visual)return;
-    function onScroll(){const y=window.scrollY,vh=window.innerHeight;const p=Math.min(Math.max(y/(vh*0.7),0),1);visual.style.opacity=(1-p*0.9).toFixed(3);visual.style.transform=`scale(${(1-p*0.18).toFixed(3)})`;}
-    window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
-  })();
 
   /* Magnetic tilt hover */
   (function(){
@@ -79,12 +72,14 @@
   /* Contact form */
   (function(){
     const btn=document.getElementById('sendBtn'); if(!btn)return;
-    const note=document.getElementById('formNote'),email=document.getElementById('email'),inquiry=document.getElementById('inquiry');
+    const note=document.getElementById('formNote'),email=document.getElementById('email'),subject=document.getElementById('subject'),inquiry=document.getElementById('inquiry');
     btn.addEventListener('click',()=>{
       const valid=/\S+@\S+\.\S+/.test(email.value)&&inquiry.value.trim().length>0;
       if(!valid){note.classList.remove('ok');note.textContent='Add a valid email and a short message first.';return;}
-      note.classList.add('ok');note.textContent='Thanks \u2014 your message is ready to send. (Hook this form up to a backend to deliver it.)';
-      email.value='';inquiry.value='';document.getElementById('subject').value='';
+      const subj=encodeURIComponent(subject.value.trim()||'Message from vexautosort.com');
+      const body=encodeURIComponent(inquiry.value.trim()+'\n\nFrom: '+email.value.trim());
+      window.location.href='mailto:team@vexautosort.com?subject='+subj+'&body='+body;
+      note.classList.add('ok');note.textContent='Thanks. Your email app should open with the message ready to send.';
     });
   })();
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Team — VexSort</title>
-<link rel="icon" type="image/svg+xml" href="vexsort-logo.svg">
+<title>Team · VEXAutoSort</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 
 <header class="nav">
-  <a href="index.html" class="nav-brand"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="8" cy="23" r="3.8" stroke="url(#lg)" stroke-width="2.6" fill="none"/><path d="M10.8 20.3 L16.5 14.6" stroke="url(#lg)" stroke-width="3" stroke-linecap="round"/><circle cx="17.5" cy="13.5" r="2.3" fill="url(#lg)"/><path d="M19 11.6 L26.5 8.5 L25 12.5" stroke="url(#lg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19 15.4 L26.5 18.5 L25 14.5" stroke="url(#lg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32"><stop offset="0" stop-color="#C20E2F"/><stop offset="1" stop-color="#FF5C75"/></linearGradient></defs></svg>VexSort</a>
+  <a href="index.html" class="nav-brand"><img class="logo-mark" src="logo.png" alt="VEXAutoSort logo">VEXAutoSort</a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
   <nav class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
@@ -23,6 +23,7 @@
     <a href="team.html" class="active">Team</a>
     <a href="timeline.html">Timeline</a>
     <a href="sponsors.html">Sponsors</a>
+    <a href="mentors.html">Mentors</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
@@ -30,15 +31,15 @@
 <main>
 <section class="page-top" style="padding-bottom:110px;">
     <div class="wrap">
-      <div class="section-head reveal"><span class="eyebrow">Who we are</span><h2>The people <span class="gradient-text">behind VexSort.</span></h2><p>Three high schoolers, one robotic arm, and a shared hatred of sorting parts by hand.</p></div>
+      <div class="section-head reveal"><span class="eyebrow">Who we are</span><h2>The people <span class="gradient-text">behind VEXAutoSort.</span></h2><p>Three high schoolers, one robotic arm, and a shared hatred of sorting parts by hand.</p></div>
       <div class="team-grid">
-        <article class="member glass reveal"><div class="photo"><div class="ph"><div class="ring">◎</div>PHOTO SLOT</div></div><div class="info"><h3>Henry</h3><div class="role">Programming · Communications</div><p>Came up with the idea and got the arm running — setup, calibration, and the code repo. He also keeps our sponsors and mentors in the loop.</p><div class="tags"><span class="tag">Hardware</span><span class="tag">LeRobot</span><span class="tag">Outreach</span></div></div></article>
-        <article class="member glass reveal"><div class="photo"><div class="ph"><div class="ring">◎</div>PHOTO SLOT</div></div><div class="info"><h3>Aditya</h3><div class="role">Programming · Research · Data</div><p>Runs the software side and the research — getting the environment set up, collecting the training data, and running the experiments.</p><div class="tags"><span class="tag">Pipeline</span><span class="tag">Research</span><span class="tag">Training</span></div></div></article>
-        <article class="member glass reveal"><div class="photo"><div class="ph"><div class="ring">◎</div>PHOTO SLOT</div></div><div class="info"><h3>Vihaan</h3><div class="role">Building · Data Collection</div><p>Designs and prints the sorters — the screw ramp and spacer tools that make the whole idea actually work.</p><div class="tags"><span class="tag">CAD</span><span class="tag">3D Print</span><span class="tag">Mechanical</span></div></div></article>
+        <article class="member glass reveal"><div class="photo"><img src="henry.png" alt="Henry"></div><div class="info"><h3>Henry</h3><div class="role">Programming · Communications</div><p>Came up with the idea and got the arm running: setup, calibration, and the code repo. He also keeps our sponsors and mentors in the loop.</p><div class="tags"><span class="tag">Hardware</span><span class="tag">Outreach</span></div></div></article>
+        <article class="member glass reveal"><div class="photo"><img src="aditya.png" alt="Aditya"></div><div class="info"><h3>Aditya</h3><div class="role">Programming · Research</div><p>Runs the software and research side: setting up the environment, collecting the training data, and running the experiments.</p><div class="tags"><span class="tag">Research</span><span class="tag">Training</span></div></div></article>
+        <article class="member glass reveal"><div class="photo"><img src="vihaan.png" alt="Vihaan"></div><div class="info"><h3>Vihaan</h3><div class="role">Building · Data Collection</div><p>Designs and prints the sorters, like the screw ramp and spacer tools that make the whole idea work.</p><div class="tags"><span class="tag">CAD</span><span class="tag">3D Print</span><span class="tag">Mechanical</span></div></div></article>
       </div>
       <div class="feature-box glass reveal">
-        <div><span class="eyebrow">Our why</span><h3 style="font-size:1.8rem;margin:14px 0 12px;">It started at <span class="gradient-text">Worlds.</span></h3><p>The idea hit while we were sorting parts by hand right before the 2026 VEX World Championships. We were about to move our whole lab for next season, and we wanted a way to never do this again — and maybe save other teams the same headache.</p></div>
-        <div class="img-ph">IMAGE — TEAM PHOTO<br>add a group shot</div>
+        <div><span class="eyebrow">Our why</span><h3 style="font-size:1.8rem;margin:14px 0 12px;">It started at <span class="gradient-text">Worlds.</span></h3><p>The idea hit while we were sorting parts by hand right before the 2026 VEX World Championships. We were about to move our whole lab for next season, and we wanted a way to never do this again, and maybe save other teams the same headache.</p></div>
+        <div class="img-ph">Team photo<br>coming soon</div>
       </div>
     </div>
   </section>
@@ -46,13 +47,13 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <a href="index.html" class="nav-brand"><svg class="logo-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="8" cy="23" r="3.8" stroke="url(#lgf)" stroke-width="2.6" fill="none"/><path d="M10.8 20.3 L16.5 14.6" stroke="url(#lgf)" stroke-width="3" stroke-linecap="round"/><circle cx="17.5" cy="13.5" r="2.3" fill="url(#lgf)"/><path d="M19 11.6 L26.5 8.5 L25 12.5" stroke="url(#lgf)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19 15.4 L26.5 18.5 L25 14.5" stroke="url(#lgf)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><defs><linearGradient id="lgf" x1="0" y1="0" x2="32" y2="32"><stop offset="0" stop-color="#C20E2F"/><stop offset="1" stop-color="#FF5C75"/></linearGradient></defs></svg>VexSort</a>
+    <a href="index.html" class="nav-brand"><img class="logo-mark" src="logo.png" alt="VEXAutoSort logo">VEXAutoSort</a>
     <div class="small">Made in Cupertino, California</div>
     <div class="footer-social">
-      <a href="mailto:team@vexsort.dev" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      <a href="mailto:team@vexautosort.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
       <a href="https://github.com/HenryW0225/AutoSort" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
-      <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-      <a href="#" target="_blank" rel="noopener" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" fill="currentColor" stroke="none"/><path d="M7 17c-1.5-3-1.5-7 0-10 1.2-.6 2.3-1 3.5-1l.5 1c1-.1 2-.1 3 0l.5-1c1.2 0 2.3.4 3.5 1 1.5 3 1.5 7 0 10-1.2.7-2.5 1.1-3.8 1.2l-.7-1.3M8.5 18.2C7.2 18.1 5.9 17.7 4.7 17"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369a19.79 19.79 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.249a18.27 18.27 0 00-5.487 0 12.6 12.6 0 00-.617-1.249.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.369a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.291.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.291a.077.077 0 01-.006.128 12.299 12.299 0 01-1.873.891.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.331c-1.182 0-2.157-1.086-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.333-.956 2.419-2.157 2.419zm7.975 0c-1.182 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.333-.946 2.419-2.157 2.419z"/></svg></a>
     </div>
   </div>
 </footer>

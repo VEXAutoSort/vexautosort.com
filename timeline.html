@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timeline — VexSort</title>
-<link rel="icon" type="image/svg+xml" href="vexsort-logo.svg">
+<title>Timeline · VEXAutoSort</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 
 <header class="nav">
-  <a href="index.html" class="nav-brand"><svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="8" cy="23" r="3.8" stroke="url(#lg)" stroke-width="2.6" fill="none"/><path d="M10.8 20.3 L16.5 14.6" stroke="url(#lg)" stroke-width="3" stroke-linecap="round"/><circle cx="17.5" cy="13.5" r="2.3" fill="url(#lg)"/><path d="M19 11.6 L26.5 8.5 L25 12.5" stroke="url(#lg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19 15.4 L26.5 18.5 L25 14.5" stroke="url(#lg)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32"><stop offset="0" stop-color="#C20E2F"/><stop offset="1" stop-color="#FF5C75"/></linearGradient></defs></svg>VexSort</a>
+  <a href="index.html" class="nav-brand"><img class="logo-mark" src="logo.png" alt="VEXAutoSort logo">VEXAutoSort</a>
   <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
   <nav class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
@@ -23,6 +23,7 @@
     <a href="team.html">Team</a>
     <a href="timeline.html" class="active">Timeline</a>
     <a href="sponsors.html">Sponsors</a>
+    <a href="mentors.html">Mentors</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
@@ -30,45 +31,45 @@
 <main>
 <section class="page-top" style="padding-bottom:110px;">
     <div class="wrap">
-      <div class="section-head reveal" style="max-width:680px;"><span class="eyebrow">The journey</span><h2>From our own bins to <span class="gradient-text">every team's bench.</span></h2><p>How VexSort goes from a fix for our own sorting headaches to something any VEX team can build and run.</p></div>
+      <div class="section-head reveal" style="max-width:680px;"><span class="eyebrow">The journey</span><h2>From our own bins to <span class="gradient-text">every team's bench.</span></h2><p>How VEXAutoSort goes from a fix for our own sorting headaches to something any VEX team can build and run.</p></div>
       <div class="tl-layout">
       <div class="tl">
         <div class="phase" data-phase="0">
-          <div class="phase-label reveal"><span class="ptag">Phase 0</span> The problem &amp; the spark · June 2026</div>
-          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Pre-season · VEX Worlds 2026</div><h3>The spark</h3><p>The idea hit during manual sorting at the World Championships. Every team in the room was losing the same hours to the same tedious job — a problem worth solving once, for everyone.</p></div></div>
-          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Early June</div><h3>A nudge from the pros</h3><p>A chat with the CTO of a robotics company pointed us toward the SO-ARM101 and an approach where the robot learns by copying a human. They also warned us about the hard part: getting it reliable across 50-plus different parts.</p></div></div>
-          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Jun 7</div><h3>The mechanical breakthrough</h3><p>The insight that makes this shippable: don't make the robot classify every part. Pair it with simple 3D-printed sorters so the arm only learns one motion — and the design stays cheap and easy to reproduce.</p></div></div>
-          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Jun 8</div><h3>Hardware online</h3><p>Got the arm initialized, calibrated, and running in teleoperation. Added the first camera. The platform other teams would eventually replicate was now in our hands.</p></div></div>
+          <div class="phase-label reveal"><span class="ptag">Phase 0</span> The problem and the spark · June 2026</div>
+          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Pre-season · VEX Worlds 2026</div><h3>The spark</h3><p>The idea hit during manual sorting at the World Championships. Every team in the room was losing the same hours to the same boring job, so we figured it was worth solving once, for everyone.</p></div></div>
+          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Early June</div><h3>A nudge from the pros</h3><p>A call with Shawn Patel, CTO of Almond Robotics, pointed us toward the SO-ARM101 and an approach where the robot learns by copying a human. He also flagged the hard part: staying reliable across 50-plus different parts.</p></div></div>
+          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Jun 7</div><h3>The mechanical breakthrough</h3><p>The insight that makes this buildable: don't make the robot classify every part. Pair it with simple 3D-printed sorters so the arm only learns one motion, which keeps the design cheap and easy to reproduce.</p></div></div>
+          <div class="event done reveal"><div class="enode"></div><div class="card glass"><div class="date">Jun 8</div><h3>Hardware online</h3><p>Got the arm initialized, calibrated, and running in teleoperation, then added the first camera.</p></div></div>
         </div>
         <div class="phase" data-phase="1">
-          <div class="phase-label reveal"><span class="ptag">Phase 1</span> Prove it works · Jun–Jul 2026</div>
-          <div class="event reveal"><div class="enode"></div><div class="card glass"><div class="date">Late June</div><h3>Custom gripper + cameras</h3><p>Design and print a gripper tip for tiny parts, mount wrist and overhead cameras, and lock in consistent lighting — all parts that have to be reproducible from a parts list.</p></div></div>
-          <div class="event reveal"><div class="enode"></div><div class="card glass"><div class="date">Early–mid July</div><h3>First demonstrations</h3><p>Pick the two most distinct parts (screws vs. standoffs) and collect ~150–200 teleoperation demos, verifying data quality as we go.</p></div></div>
-          <div class="event reveal"><div class="enode"></div><div class="card glass"><div class="date">Late July</div><h3>First trained policy</h3><p>Train the first ACT policy, document every failure mode on video, collect targeted demos to patch the worst ones, and retrain until the two-part sort is reliable.</p></div></div>
+          <div class="phase-label reveal"><span class="ptag">Phase 1</span> Prove it works · Jun to Jul 2026</div>
+          <div class="event reveal"><div class="enode"></div><div class="card glass"><div class="date">Late June</div><h3>Custom gripper and cameras</h3><p>Design and print a gripper tip for tiny parts, mount the wrist and overhead cameras, and lock in consistent lighting. All of it has to be reproducible from a parts list.</p></div></div>
+          <div class="event reveal"><div class="enode"></div><div class="card glass"><div class="date">Early to mid July</div><h3>First demonstrations</h3><p>Pick the two most distinct parts (screws vs. standoffs) and collect roughly 150 to 200 teleoperation demos, checking data quality as we go.</p></div></div>
+          <div class="event reveal"><div class="enode"></div><div class="card glass"><div class="date">Late July</div><h3>First trained policy</h3><p>Train the first ACT policy, record every failure mode on video, collect targeted demos to patch the worst ones, and retrain until the two-part sort holds up.</p></div></div>
         </div>
         <div class="phase" data-phase="2">
-          <div class="phase-label reveal"><span class="ptag">Phase 2</span> Make it general · Aug–Nov 2026</div>
-          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Fall</div><h3>From 2 parts to the full bin</h3><p>Scale to five-plus part types at high reliability, tune cameras and lighting to fix visual confusions, and compare policy types — the breadth a real team's parts bin demands.</p></div></div>
-          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Late fall</div><h3>Lock the reference design</h3><p>Freeze the hardware layout, parts list, and configuration into a single known-good setup — the thing a second team will build from.</p></div></div>
+          <div class="phase-label reveal"><span class="ptag">Phase 2</span> Make it general · Aug to Nov 2026</div>
+          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Fall</div><h3>From 2 parts to the full bin</h3><p>Scale to five or more part types, tune the cameras and lighting to fix visual confusions, and compare policy types against each other.</p></div></div>
+          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Late fall</div><h3>Lock the reference design</h3><p>Freeze the hardware layout, parts list, and configuration into one known-good setup that a second team can build from.</p></div></div>
         </div>
         <div class="phase" data-phase="3">
           <div class="phase-label reveal"><span class="ptag">Phase 3</span> Package it for others · Late 2026</div>
           <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Winter</div><h3>Docs anyone can follow</h3><p>Write step-by-step build and setup guides, record clear demo videos, and clean up the codebase so a team with no ML background can get sorting.</p></div></div>
-          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Winter</div><h3>Bill of materials &amp; cost</h3><p>Cost out every component and target a price point that's realistic for a high school team's budget.</p></div></div>
+          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Winter</div><h3>Bill of materials and cost</h3><p>Cost out every component and aim for a price a high school team can actually afford.</p></div></div>
         </div>
         <div class="phase" data-phase="4">
           <div class="phase-label reveal"><span class="ptag">Phase 4</span> Get it into teams' hands · 2027</div>
-          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Early 2027</div><h3>Pilot with real teams</h3><p>Get one or two other VEX teams to build VexSort using only our docs. Wherever they get stuck is what we fix next.</p></div></div>
+          <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">Early 2027</div><h3>Pilot with real teams</h3><p>Get one or two other VEX teams to build VEXAutoSort using only our docs. Wherever they get stuck is what we fix next.</p></div></div>
           <div class="event future reveal"><div class="enode"></div><div class="card glass"><div class="date">2027</div><h3>Decide how to ship</h3><p>Open-source the design, sell ready-to-run kits, or both. The goal: any team that wants to stop sorting by hand can.</p></div></div>
         </div>
       </div>
       <aside class="tl-sticky">
         <div class="tl-img-stack glass">
-          <div class="tl-img active" data-img="0"><div class="tl-img-ph"><span class="tl-img-num">P0</span>IMAGE — THE SPARK<br>manual sorting / Worlds</div></div>
-          <div class="tl-img" data-img="1"><div class="tl-img-ph"><span class="tl-img-num">P1</span>IMAGE — FIRST SORT<br>arm + screws demo</div></div>
-          <div class="tl-img" data-img="2"><div class="tl-img-ph"><span class="tl-img-num">P2</span>IMAGE — FULL BIN<br>5+ part types</div></div>
-          <div class="tl-img" data-img="3"><div class="tl-img-ph"><span class="tl-img-num">P3</span>IMAGE — THE KIT<br>docs + BOM</div></div>
-          <div class="tl-img" data-img="4"><div class="tl-img-ph"><span class="tl-img-num">P4</span>IMAGE — IN THE WILD<br>another team's build</div></div>
+          <div class="tl-img active" data-img="0"><div class="tl-img-ph"><span class="tl-img-num">P0</span>The spark<br>manual sorting at Worlds</div></div>
+          <div class="tl-img" data-img="1"><div class="tl-img-ph"><span class="tl-img-num">P1</span>First sort<br>arm and screws demo</div></div>
+          <div class="tl-img" data-img="2"><div class="tl-img-ph"><span class="tl-img-num">P2</span>Full bin<br>5+ part types</div></div>
+          <div class="tl-img" data-img="3"><div class="tl-img-ph"><span class="tl-img-num">P3</span>The kit<br>docs and BOM</div></div>
+          <div class="tl-img" data-img="4"><div class="tl-img-ph"><span class="tl-img-num">P4</span>In the wild<br>another team's build</div></div>
         </div>
       </aside>
       </div>
@@ -79,13 +80,13 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <a href="index.html" class="nav-brand"><svg class="logo-mark" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="8" cy="23" r="3.8" stroke="url(#lgf)" stroke-width="2.6" fill="none"/><path d="M10.8 20.3 L16.5 14.6" stroke="url(#lgf)" stroke-width="3" stroke-linecap="round"/><circle cx="17.5" cy="13.5" r="2.3" fill="url(#lgf)"/><path d="M19 11.6 L26.5 8.5 L25 12.5" stroke="url(#lgf)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19 15.4 L26.5 18.5 L25 14.5" stroke="url(#lgf)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><defs><linearGradient id="lgf" x1="0" y1="0" x2="32" y2="32"><stop offset="0" stop-color="#C20E2F"/><stop offset="1" stop-color="#FF5C75"/></linearGradient></defs></svg>VexSort</a>
+    <a href="index.html" class="nav-brand"><img class="logo-mark" src="logo.png" alt="VEXAutoSort logo">VEXAutoSort</a>
     <div class="small">Made in Cupertino, California</div>
     <div class="footer-social">
-      <a href="mailto:team@vexsort.dev" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      <a href="mailto:team@vexautosort.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
       <a href="https://github.com/HenryW0225/AutoSort" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
-      <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-      <a href="#" target="_blank" rel="noopener" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 12a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" fill="currentColor" stroke="none"/><path d="M7 17c-1.5-3-1.5-7 0-10 1.2-.6 2.3-1 3.5-1l.5 1c1-.1 2-.1 3 0l.5-1c1.2 0 2.3.4 3.5 1 1.5 3 1.5 7 0 10-1.2.7-2.5 1.1-3.8 1.2l-.7-1.3M8.5 18.2C7.2 18.1 5.9 17.7 4.7 17"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369a19.79 19.79 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.249a18.27 18.27 0 00-5.487 0 12.6 12.6 0 00-.617-1.249.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.369a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.291.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.291a.077.077 0 01-.006.128 12.299 12.299 0 01-1.873.891.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.331c-1.182 0-2.157-1.086-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.333-.956 2.419-2.157 2.419zm7.975 0c-1.182 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.333-.946 2.419-2.157 2.419z"/></svg></a>
     </div>
   </div>
 </footer>
